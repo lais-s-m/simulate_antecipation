@@ -1,0 +1,48 @@
+.box {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.box label {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.box p {
+  color: var(--light-grey);
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 600;
+
+  margin-top: 4px;
+}
+
+.box input {
+  border: 1px solid var(--light-grey);
+  border-radius: var(--border-radius);
+  transition: 0.5s;
+
+  padding: 10px;
+}
+
+.box input::placeholder {
+  color: var(--light-grey);
+}
+
+.box input:hover,
+.box input:focus {
+  border: 1px solid var(--hover-blue);
+  transition: 0.5s;
+}
+
+.box input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.box input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
